@@ -34,6 +34,11 @@
             margin-right: 10px;
             padding: 5px;
         }
+        
+        .wrap {
+            display: flex;
+            flex-grow: 1;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +49,8 @@
             <button class="panel-button js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
             <button class="panel-button js-mute-button" hidden><i class="fa fa-volume-up" aria-hidden="true"></i></button>
             <button class="panel-button js-volume-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+            <div class="wrap"></div>
+            <button class="panel-button js-fullscreen-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
         </div>
     </div>
     
