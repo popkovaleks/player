@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Player</title>
     <style>
         body{
@@ -38,7 +41,18 @@
             height: 38px;
         }
         
-        .video-player .control-panel-space {
+        /* .video-player .control-panel-space {
+            flex-grow: 1;
+        } */
+        .video-player .video-player-control-panel .js-current-time,
+        .video-player .video-player-control-panel .js-duration {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .video-player .control-time-panel {
+            display: flex;
+            justify-content:space-between;
             flex-grow: 1;
         }
     </style>
@@ -51,6 +65,12 @@
             <button class="control-panel-button js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
             <button class="control-panel-button js-mute-button" hidden><i class="fa fa-volume-up" aria-hidden="true"></i></button>
             <button class="control-panel-button js-volume-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+            <div class="control-time-panel">
+                <div class="js-current-time"></div>
+                -
+                <div class="js-duration"></div>
+            </div>
+            
             <div class="control-panel-space"></div>
             <button class="control-panel-button js-fullscreen-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
         </div>
