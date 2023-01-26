@@ -80,8 +80,19 @@
             background-color: #f8104d;
             border-radius: 50%;
             margin-left: -9px;
+            opacity: 0;
+
+            transition-property: opacity;
+            transition-duration: 300ms;
+            transition-timing-function: ease-out;
         }
         
+        .js-progress:hover > .slider-circle {
+            opacity: 1;
+            transition-property: opacity;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in;
+        }
     </style>
 </head>
 <body>
