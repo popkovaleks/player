@@ -38,6 +38,7 @@ body{
 
 .video-player .control-time-panel {
     display: flex;
+    align-items: center;
     flex-grow: 1;
 }
 
@@ -47,7 +48,6 @@ body{
 
 .video-player .js-progress {
     height: 5px;
-    margin-top: 6px;
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
